@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Meeting — ConnectCall</title><link rel="stylesheet" href="/css/style.css"></head>
+<body class="meeting-body">
+<header class="meeting-header"><a class="brand" href="/"> <span class="brand-mark">✦</span> Connect<span>Call</span></a><div class="meeting-meta"><span id="roomLabel">Meeting room</span><span class="live-dot">● LIVE</span></div><button class="btn secondary small" id="copyInvite">🔗 Copy invite</button></header>
+<main class="meeting-layout">
+  <section class="stage-wrap"><div class="stage" id="videoGrid">
+    <div class="video-tile local-tile" id="localTile"><video id="localVideo" autoplay playsinline muted></video><div class="tile-name" id="localName">You</div><div class="tile-status" id="localStatus">🎙️</div></div>
+  </div><div class="connection-note" id="connectionNote">Connecting to meeting…</div></section>
+  <aside class="side-panel" id="sidePanel">
+    <div class="panel-tabs"><button class="tab active" data-tab="chat">Chat</button><button class="tab" data-tab="people">People <span id="peopleCount">1</span></button></div>
+    <section class="tab-content" id="chatPanel"><div class="chat-messages" id="chatMessages"><div class="system-message">Welcome! Messages are shown in this browser demo.</div></div>
+      <div class="emoji-tray" id="emojiTray"><button>😀</button><button>😂</button><button>❤️</button><button>👍</button><button>🎉</button><button>👏</button><button>🔥</button><button>🙏</button></div>
+      <form id="chatForm" class="chat-form"><input id="chatInput" placeholder="Write a message…" autocomplete="off"><button class="send-btn">➤</button></form>
+    </section>
+    <section class="tab-content hidden" id="peoplePanel"><div id="peopleList" class="people-list"></div></section>
+  </aside>
+</main>
+<footer class="controls">
+  <div class="control-group"><button class="control" id="micBtn"><span>🎙️</span><small>Mute</small></button><button class="control" id="cameraBtn"><span>📷</span><small>Stop video</small></button><button class="control" id="shareBtn"><span>🖥️</span><small>Share screen</small></button></div>
+  <div class="control-group"><button class="control" id="emojiBtn"><span>😊</span><small>React</small></button><button class="control" id="chatToggle"><span>💬</span><small>Chat</small></button><button class="control" id="peopleToggle"><span>👥</span><small>People</small></button><button class="control" id="fullscreenBtn"><span>⛶</span><small>Full screen</small></button></div>
+  <button class="leave-btn" id="leaveBtn">☎ Leave</button>
+</footer>
+<div class="toast" id="toast"></div><script src="/js/meeting.js"></script>
+</body></html>

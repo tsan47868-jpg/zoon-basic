@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Schedule — ConnectCall</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+<body>
+    <nav class="topbar">
+        <a class="brand" href="/">
+            <span class="brand-mark">✦</span> Connect<span>Call</span></a>
+            <div><a href="/">Home</a><a href="/settings.html">Settings</a></div></nav>
+<main class="page wrap">
+    <span class="eyebrow">PLAN AHEAD</span>
+    <h1>Schedule a meeting</h1>
+    <p class="muted">Create a calendar entry on this device and share the meeting code with guests.</p>
+<form class="form-card" id="scheduleForm">
+        <label>Meeting title</label>
+        <input id="title" required placeholder="Weekly team catch-up">
+        <label>Date and time</label>
+        <input id="when" type="datetime-local" required>
+        <label>Meeting code</label>
+        <input id="code" required placeholder="team-catchup">
+        <button class="btn primary">Save meeting</button>
+    </form>
+    <h2>Your scheduled meetings</h2>
+    <div id="scheduleList" class="schedule-list"></div>
+</main>
+<script src="/js/schedule.js"></script>
+</body>
+</html>
